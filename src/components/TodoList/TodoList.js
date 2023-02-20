@@ -11,7 +11,7 @@ class TodoList extends React.Component{
         return(
             <div className='todo-list--container'>
                 <div className="todo-list mt-5">
-                    { this.props.tasks.map(task => <AddItem key={task.key} text={task.text} id={task.id} removeTask={this.props.removeTask}/>) }
+                    { this.props.tasks.map(task => <AddItem key={task.key} text={task.text} id={task.id} removeTask={this.props.removeTask} enterText={this.props.enterText}  />) }
                 </div>
             </div>
         )
